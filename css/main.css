@@ -1,108 +1,168 @@
-body {
-    background-color: #00121C;
-    margin: 0;
-}
-header {
-    background-color: rgba(0, 0, 0, 0.14);
-    padding-block: 1em;
-}
-nav {
-    font-family: 'Space Mono', sans-serif;
-    font-size: 20;
-    float: right;
-    padding: 0;
-
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 0;
 }
 
-a {
-    color: #E9F5FA;
-    text-decoration: none;
-    padding: 0 1.5em;
-    font-family: 'Space Mono', sans-serif;
+body {
+  color: white;
+  background-color: #001b29;
+  font-family: "Space Mono", sans-serif;
+  margin: 0;
 }
-
-img.pfp {
-    display: block;
-    padding-block: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 13em;
-    border-radius: 50%;
+body header {
+  background-color: #00111b;
+  padding-block: 1em;
 }
-
-.hero {
-    padding-block: 10em;
-    margin-block: 1em;
+body header a {
+  vertical-align: middle;
+  font-weight: bold;
+  margin-inline: 1em;
 }
-
-h1.heading {
-    display: block;
-    padding-inline: auto;
-    margin-block: 0;
-    font-family: 'Lexend Giga', sans-serif;
-    font-style: normal;
-    font-size: 5.5rem;
-    font-weight: normal;
-    line-height: 6.5rem;
-    text-align: center;
-    background: linear-gradient(180deg, #B67DFF 29.71%, #0087C0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+body header nav {
+  background-color: #000c13;
+  font-size: 20;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  width: 75vw;
+  height: 100vh;
+  border-radius: 0.5em;
+  transition: 300ms;
+  -webkit-clip-path: circle(0 at 100% 0);
+          clip-path: circle(0 at 100% 0);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-section.section-about-me{
-    max-inline-size: 50em;
-    margin-inline: auto;
-    margin-block: 3em;
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 30px;
-    text-align: left;
-    color: #E9F5FA;
+body header nav img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding: 1em;
+  width: 1.5em;
 }
-h1.heading-about-me{
-    display: flex;
-    font-size: 2rem;
-    font-weight: bold;
-    padding-inline: auto;
-    margin-block: 0;
-    line-height: 2rem;
-    font-family: 'Space Mono';
-    background: #E9F5FA;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
+body header nav a {
+  display: block;
+  padding: 1em;
+  border-radius: 0.5em;
+  transition: 250ms;
 }
-h1.heading-about-me::after {
-    content:"";
-    display: inline-block;
-    width:100%;
-    height:1px;
-    align-self: center;
-    margin-inline: 1em;
-    background: #E9F5FA;
+body header nav a:hover {
+  transition: 250ms;
+  background-color: #001b29;
 }
-
-p.subheading{
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 30px;
-    text-align: center;
-    color: #E9F5FA;
-
+body header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding: 1em;
+  width: 1.5em;
+  right: 10px;
 }
-
+body section {
+  padding-block: 3em;
+}
+body section.hero img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-start: 5em;
+  width: 10em;
+  border-radius: 100%;
+}
+body section.hero h1 {
+  display: block;
+  text-align: center;
+  font-family: "Lexend Giga", sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(180deg, #B67DFF 29.71%, #0087C0 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body section.hero h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1em;
+}
+body section.about-me, body section.my-projects {
+  padding-inline: 1.5em;
+  margin-inline: auto;
+  max-width: 50em;
+  display: flex;
+  align-items: center;
+}
+body section.about-me .container .h2-with-underline, body section.my-projects .container .h2-with-underline {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+body section.about-me .container .h2-with-underline h2, body section.my-projects .container .h2-with-underline h2 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 2em;
+  white-space: nowrap;
+}
+body section.about-me .container .h2-with-underline .underline, body section.my-projects .container .h2-with-underline .underline {
+  height: 1px;
+  background-color: white;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 36px;
+  margin-left: 16px;
+}
+body section.about-me .container p, body section.my-projects .container p {
+  margin-top: 0;
+  font-size: 1em;
+}
+body section.my-projects .container {
+  width: auto;
+}
+body section.my-projects .container ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body section.my-projects .container ul .project-card {
+  border: solid white 1px;
+  border-radius: 15px;
+  margin: 1em;
+}
+body section.my-projects .container ul .project-card h3 {
+  margin-inline: 0.5em;
+}
+body section.my-projects .container ul .project-card img {
+  width: 260px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-inline: 0.5em;
+}
+body section.my-projects .container ul .project-card p {
+  max-width: 260px;
+  white-space: normal;
+  margin-inline: 0.5em;
+  margin-block: 0;
+}
+body section.my-projects .container ul .project-card div {
+  text-align: end;
+  padding: 0.5em;
+}
+body section.my-projects .container ul .project-card div a {
+  margin: 0.5em;
+  border-radius: 1000px;
+  padding-inline: 0.3em;
+}
+body section.my-projects .container ul .project-card div a:hover {
+  transition: 250ms;
+  background-color: white;
+  color: #001b29;
+}/*# sourceMappingURL=main.css.map */

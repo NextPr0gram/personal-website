@@ -1,7 +1,7 @@
 var heading = document.getElementById("heading");
 var i = 0;
 var txt = "Anaf Ibn Karim";
-var speed = 30;
+var speed = 50;
 
 function typeWriter() {
   if (i < txt.length) {
@@ -16,9 +16,13 @@ function typeWriter() {
     i++;
     heading.innerHTML += "|";
     setTimeout(typeWriter, speed);
+  } else {
+    heading.innerHTML = heading.innerHTML.substring(0,heading.innerHTML.length-1);
   }
+
   
 }
 
 
 typeWriter();
+
