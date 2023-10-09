@@ -15,6 +15,20 @@ body {
   font-family: "Space Mono", sans-serif;
   margin: 0;
 }
+body a.back-button {
+  font-family: "Lexend Deca", sans-serif;
+  margin-inline: auto;
+  display: block;
+  text-align: center;
+  margin-inline: auto;
+  padding: 1em;
+}
+body a.back-button:hover {
+  text-decoration: underline;
+  transition: 250ms;
+  background-color: white;
+  color: #001b29;
+}
 body header {
   background-color: #00111b;
   padding-block: 1em;
@@ -91,24 +105,24 @@ body section.hero h3 {
   font-weight: normal;
   font-size: 1em;
 }
-body section.about-me, body section.my-projects {
+body section.about-me, body section.my-projects, body section.game {
   padding-inline: 1.5em;
   margin-inline: auto;
   max-width: 50em;
   display: flex;
   align-items: center;
 }
-body section.about-me .container .h2-with-underline, body section.my-projects .container .h2-with-underline {
+body section.about-me .container .h2-with-underline, body section.my-projects .container .h2-with-underline, body section.game .container .h2-with-underline {
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
-body section.about-me .container .h2-with-underline h2, body section.my-projects .container .h2-with-underline h2 {
+body section.about-me .container .h2-with-underline h2, body section.my-projects .container .h2-with-underline h2, body section.game .container .h2-with-underline h2 {
   font-family: "Lexend Deca", sans-serif;
   font-size: 2em;
   white-space: nowrap;
 }
-body section.about-me .container .h2-with-underline .underline, body section.my-projects .container .h2-with-underline .underline {
+body section.about-me .container .h2-with-underline .underline, body section.my-projects .container .h2-with-underline .underline, body section.game .container .h2-with-underline .underline {
   height: 1px;
   background-color: white;
   height: 1px;
@@ -116,9 +130,14 @@ body section.about-me .container .h2-with-underline .underline, body section.my-
   margin-bottom: 36px;
   margin-left: 16px;
 }
-body section.about-me .container p, body section.my-projects .container p {
+body section.about-me .container p, body section.my-projects .container p, body section.game .container p {
   margin-top: 0;
   font-size: 1em;
+}
+body section.game .image-container img {
+  width: 100%;
+  border-radius: 10px;
+  margin-block: 1em;
 }
 body section.my-projects .container {
   width: auto;

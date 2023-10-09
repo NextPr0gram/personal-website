@@ -27,6 +27,22 @@ body {
     font-family: 'Space Mono', sans-serif;
     margin: 0;
 
+    a.back-button {
+        font-family: 'Lexend Deca', sans-serif;
+        margin-inline: auto;
+        display: block;
+        text-align: center;
+        margin-inline: auto;
+        padding: 1em;
+
+        &:hover {
+            text-decoration: underline;
+            transition: 250ms;
+            background-color: white;
+            color: $primaryColour;
+        }
+    }
+
     header {
         background-color: $secondaryColour;
         padding-block: 1em;
@@ -109,12 +125,13 @@ body {
         }
     }
 
-    section.about-me, section.my-projects {
+    section.about-me, section.my-projects, section.game{
         padding-inline: 1.5em;
         margin-inline: auto;
         max-width: 50em;
         display: flex;
         align-items: center;
+    
 
         .container {
             .h2-with-underline {
@@ -145,6 +162,15 @@ body {
                 font-size: 1em;
             }
         
+        }
+    }
+    section.game {
+        .image-container{
+            img {
+                width: 100%;
+                border-radius: 10px;
+                margin-block: 1em;
+              }
         }
     }
 
