@@ -41,7 +41,7 @@ body {
             border-width: 1px;
             padding: 1em;
     
-            &:hover &:active{
+            &:hover, &:active{
                 text-decoration: underline;
                 transition: 250ms;
                 background-color: white;

@@ -30,7 +30,7 @@ body .button-container a.back-button {
   border-width: 1px;
   padding: 1em;
 }
-body .button-container a.back-button:hover body .button-container a.back-button:active {
+body .button-container a.back-button:hover, body .button-container a.back-button:active {
   text-decoration: underline;
   transition: 250ms;
   background-color: white;
