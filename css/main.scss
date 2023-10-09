@@ -35,7 +35,7 @@ body {
         margin-inline: auto;
         padding: 1em;
 
-        &:hover {
+        &:hover, &:focus{
             text-decoration: underline;
             transition: 250ms;
             background-color: white;

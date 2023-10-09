@@ -23,7 +23,7 @@ body a.back-button {
   margin-inline: auto;
   padding: 1em;
 }
-body a.back-button:hover {
+body a.back-button:hover, body a.back-button:focus {
   text-decoration: underline;
   transition: 250ms;
   background-color: white;
