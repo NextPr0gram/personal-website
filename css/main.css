@@ -15,15 +15,22 @@ body {
   font-family: "Space Mono", sans-serif;
   margin: 0;
 }
-body a.back-button {
-  font-family: "Lexend Deca", sans-serif;
+body .button-container {
   margin-inline: auto;
   display: block;
   text-align: center;
-  margin-inline: auto;
+  margin: auto;
+  margin-bottom: 2em;
+}
+body .button-container a.back-button {
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 1000px;
+  border: white;
+  border-style: solid;
+  border-width: 1px;
   padding: 1em;
 }
-body a.back-button:hover, body a.back-button:focus {
+body .button-container a.back-button:hover body .button-container a.back-button:active {
   text-decoration: underline;
   transition: 250ms;
   background-color: white;
