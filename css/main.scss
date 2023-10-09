@@ -58,6 +58,10 @@ body {
         background-color: $secondaryColour;
         padding-top: 2em;
         padding-inline: 2em;
+
+        a.name-navbar {
+            font-weight: bold;
+        }
         .button-container {
             text-align: right;
             padding-right: 0;
@@ -115,7 +119,7 @@ body {
         }
     }
 
-    section.about-me, section.my-projects, section.game{
+    section.about-me, section.my-projects, section.game, section.socials{
         padding-inline: 1.5em;
         margin-inline: auto;
         max-width: 50em;
@@ -221,6 +225,43 @@ body {
                 }
             }
         }
+        
+    }
+    section.socials {
+        .container {
+            width: 100%;
+            ul {
+                $cardWidth: 260px;
+
+
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                .icon-container {
+                    
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        margin-inline: 0.5em;
+                    
+                    }
+
+                    
+
+                    div {
+                        text-align: end;
+                        padding: 0.5em;
+                        
+                    }
+                }
+            }
+        }
+        
     }
     
 }

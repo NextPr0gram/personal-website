@@ -43,6 +43,9 @@ body header {
   padding-top: 2em;
   padding-inline: 2em;
 }
+body header a.name-navbar {
+  font-weight: bold;
+}
 body header .button-container {
   text-align: right;
   padding-right: 0;
@@ -87,24 +90,24 @@ body section.hero h3 {
   font-weight: normal;
   font-size: 1em;
 }
-body section.about-me, body section.my-projects, body section.game {
+body section.about-me, body section.my-projects, body section.game, body section.socials {
   padding-inline: 1.5em;
   margin-inline: auto;
   max-width: 50em;
   display: flex;
   align-items: center;
 }
-body section.about-me .container .h2-with-underline, body section.my-projects .container .h2-with-underline, body section.game .container .h2-with-underline {
+body section.about-me .container .h2-with-underline, body section.my-projects .container .h2-with-underline, body section.game .container .h2-with-underline, body section.socials .container .h2-with-underline {
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
-body section.about-me .container .h2-with-underline h2, body section.my-projects .container .h2-with-underline h2, body section.game .container .h2-with-underline h2 {
+body section.about-me .container .h2-with-underline h2, body section.my-projects .container .h2-with-underline h2, body section.game .container .h2-with-underline h2, body section.socials .container .h2-with-underline h2 {
   font-family: "Lexend Deca", sans-serif;
   font-size: 2em;
   white-space: nowrap;
 }
-body section.about-me .container .h2-with-underline .underline, body section.my-projects .container .h2-with-underline .underline, body section.game .container .h2-with-underline .underline {
+body section.about-me .container .h2-with-underline .underline, body section.my-projects .container .h2-with-underline .underline, body section.game .container .h2-with-underline .underline, body section.socials .container .h2-with-underline .underline {
   height: 1px;
   background-color: white;
   height: 1px;
@@ -112,7 +115,7 @@ body section.about-me .container .h2-with-underline .underline, body section.my-
   margin-bottom: 36px;
   margin-left: 16px;
 }
-body section.about-me .container p, body section.my-projects .container p, body section.game .container p {
+body section.about-me .container p, body section.my-projects .container p, body section.game .container p, body section.socials .container p {
   margin-top: 0;
   font-size: 1em;
 }
@@ -166,4 +169,26 @@ body section.my-projects .container ul .project-card div a:hover {
   transition: 250ms;
   background-color: white;
   color: #001b29;
+}
+body section.socials .container {
+  width: 100%;
+}
+body section.socials .container ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body section.socials .container ul .icon-container img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin-inline: 0.5em;
+}
+body section.socials .container ul .icon-container div {
+  text-align: end;
+  padding: 0.5em;
 }/*# sourceMappingURL=main.css.map */
