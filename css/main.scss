@@ -53,39 +53,22 @@ body {
     
 
     header {
+        display: flex;
+        justify-content: space-between;
         background-color: $secondaryColour;
-        padding-block: 1em;
-
-        a {
-            vertical-align: middle;
-            font-weight: bold;
-            margin-inline: 1em;
-        }
-
-        nav {
-            background-color: $tertiaryColour;
-            font-size: 20;
-            top: 0px;
-            right: 0px;
-            position: fixed;
-            width: 75vw;
-            height: 100vh;
-            border-radius: 0.5em;
-            transition: 300ms;
-            clip-path: circle(0 at 100% 0);
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            
-            
-            
-            img {
-                @include open-close();
-            }
-            
-
-            a {
-                display: block;
-                padding: 1em;
+        padding-top: 2em;
+        padding-inline: 2em;
+        .button-container {
+            text-align: right;
+            padding-right: 0;
+            margin-right: 0;
+            a.resume-button {
+                padding-block: 0.5em;
+                padding-inline: 1em;
                 border-radius: 0.5em;
+                border-color: white;
+                border-style: solid;
+                border-width: 2px;
                 transition: 250ms;
                 
                 &:hover {
@@ -94,12 +77,10 @@ body {
                 }
             }
         }
+        
 
-        img {
-            @include open-close();
-            
-            right: +10px;
-        }
+
+
     }
     section {
         padding-block: 3em;

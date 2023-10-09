@@ -37,54 +37,29 @@ body .button-container a.back-button:hover, body .button-container a.back-button
   color: #001b29;
 }
 body header {
+  display: flex;
+  justify-content: space-between;
   background-color: #00111b;
-  padding-block: 1em;
+  padding-top: 2em;
+  padding-inline: 2em;
 }
-body header a {
-  vertical-align: middle;
-  font-weight: bold;
-  margin-inline: 1em;
-}
-body header nav {
-  background-color: #000c13;
-  font-size: 20;
-  top: 0px;
-  right: 0px;
-  position: fixed;
-  width: 75vw;
-  height: 100vh;
-  border-radius: 0.5em;
-  transition: 300ms;
-  -webkit-clip-path: circle(0 at 100% 0);
-          clip-path: circle(0 at 100% 0);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-body header nav img {
-  position: absolute;
-  top: 0;
-  right: 0;
+body header .button-container {
   text-align: right;
-  padding: 1em;
-  width: 1.5em;
+  padding-right: 0;
+  margin-right: 0;
 }
-body header nav a {
-  display: block;
-  padding: 1em;
+body header .button-container a.resume-button {
+  padding-block: 0.5em;
+  padding-inline: 1em;
   border-radius: 0.5em;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
   transition: 250ms;
 }
-body header nav a:hover {
+body header .button-container a.resume-button:hover {
   transition: 250ms;
   background-color: #001b29;
-}
-body header img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
-  padding: 1em;
-  width: 1.5em;
-  right: 10px;
 }
 body section {
   padding-block: 3em;
