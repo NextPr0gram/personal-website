@@ -26,3 +26,9 @@ function typeWriter() {
 
 typeWriter();
 
+function copyDiscordUsername() {
+  let DiscordUsername = "NextProgram#8535"
+  navigator.clipboard.writeText(DiscordUsername);
+  // Alert the copied text
+  //show popup
+}

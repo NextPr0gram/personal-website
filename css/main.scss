@@ -241,7 +241,9 @@ body {
                 justify-content: center;
                 
                 .icon-container {
-                    
+                    button {
+                        text-decoration: none;
+                    }
                     img {
                         width: 32px;
                         height: 32px;

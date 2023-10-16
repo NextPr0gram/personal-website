@@ -180,6 +180,9 @@ body section.socials .container ul {
   flex-wrap: wrap;
   justify-content: center;
 }
+body section.socials .container ul .icon-container button {
+  text-decoration: none;
+}
 body section.socials .container ul .icon-container img {
   width: 32px;
   height: 32px;
